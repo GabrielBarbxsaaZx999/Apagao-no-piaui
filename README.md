@@ -1,1 +1,2 @@
-# Apagao-no-piaui
+ Escopo projeto ja apresentado 
+ sme cancelar consulta
