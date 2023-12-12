@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paciente.css">
+
+    <style>
+        * {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.header{
+    background-color: #00a6fb;
+    height: 55px;
+}
+
+.logautdiv{
+    align-items: left;
+    position: absolute;
+}
+
+.logout{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 15px;
+    color: #fff;
+    
+}
+
+.logout:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.forms{
+    background-color: #eee;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 35px;
+    margin-top: 90px;
+}
+
+
+.titulosforms{
+    font-size: 25px;
+    color: #00a6fb;
+    padding: 20px;
+}
+
+.img{
+    margin-left: 15px;
+    height: 50px;
+    width: 160px;
+}
+
+#Graficos{
+    background-color: #eee;
+    width: 1000px;
+    height: 450px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.relat{
+    font-size: 20px;
+}
+
+
+.dashboard {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    background-color: #00a6fb;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: bottom;
+    bottom: 0;
+    width: 1260px;
+    margin-top: 70px;
+}
+
+.tabela{
+    width: 100%;
+    height: 90%;
+}
+
+.butom{
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+}
+
+.butom:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    
+}
+
+.lista {
+    background-color: #3498db;
+    padding: 10px;
+    text-align: center;
+}
+
+.listinha {
+            list-style-type: none;
+            text-align: center;
+            padding: 0px;
+            padding-top: 10px;
+        }
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+    </style>
+    <script>
+
+function paciente() {
+            
+            window.location.href = "tPacAdm";
+}
+
+
+function medicos() {
+            
+            window.location.href = "tMedAdm";
+}
+
+function agendamentos(){
+    window.location.href = ".html";
+}
+
+function dashboard(){
+    window.location.href = "tAdm";
+}
+
+function seta(){
+    window.location.href = "/";
+}
+
+    </script>
+    <title>Administração Medical Group</title>
+    
+</head>
+<body>
+    <header class="header">
+        <img class="img" src="https://github.com/GabrielBarbxsaaZx999/testee.github.io/blob/main/Logo.png?raw=true" alt="Logo">
+    </header>
+        <nav>
+            <ul class="lista">
+                <div class="logautdiv"><a type="button" class="logout" href="/logout">&#9664; Logout</a></div>
+                <li><button  class="butom" type="button" href="#" onclick="dashboard()">Dashboard</button></li>
+                <li><button  class="butom" type="button" href="#" onclick="paciente()">Pacientes</button></li>
+                <li><button  class="butom" type="button" href="#" onclick="medicos()">Médicos</button></li>
+            </ul>
+        </nav>
+ 
+        <main class="main">
+            <b>
+                <section class="dashboard">
+                    <form class="forms" id="pacientes">
+                        <h1 class="titulosforms">Pacientes</h1>
+                        <ul class="listinha">
+                            <li>José da Silva</li>
+                            <li>Maria Oliveira</li>
+                            <li>João Santos</li>
+                            <li>Ana Souza</li>
+                            <li>Carlos Pereira</li>
+                        </ul>
+                    </form>
+                </section>
+            </b>
+        </main>
+    
+
+    <footer>
+    
+        <p> 2023&copy;Todos os diretios reservados</p>
+    </footer>
+</body>
+</html>
