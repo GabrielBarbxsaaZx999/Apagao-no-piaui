@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Consultas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #00a6fb;
+            color: #fff;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 80px;
+            overflow: hidden; /* Adicionado para conter os botões dentro do .form-container */
+        }
+
+        .marcar,
+        .consultas-button {
+        display: inline-block;
+        width: calc(60% - 5px); /* Ajuste o valor conforme necessário para aumentar o tamanho */
+        margin-right: 10px;
+        box-sizing: border-box;
+}
+
+        .form-container input {
+            display: block;
+            width: 95%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            background-color: #00a6fb;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%; /* Alterado para ocupar 100% da largura */
+            box-sizing: border-box; /* Garante que a largura inclua padding e bordas */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Marcar Consultas</h1>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <!-- Create Form -->
+    <form action="/paciente" method="POST" class="form-container">
+        <input id="nomePaciente" name="nomePaciente" placeholder="Nome do Paciente" required value="Jose">
+        <!-- <input type="hidden" id="gmailPacientes" name="gmail" placeholder="gmail" required value"> -->
+        <input type="email" id="nomeMedico" name="nomeMedico" placeholder="Nome do Médico" required value="sla@medico.com">
+        <input type="date" id="horário" name="horario" placeholder="Horário" required value="20/12/2023">
+        <input type="text" id="especiliadade" name="especialidade" placeholder="Especialidade" required value="Clínico geral"> 
+        <button class="marcar">Marcar</button>
+        <br>
+        <button class="consultas-button" onclick="historico()">Consultas</button>
+    </form>
+
+    <ul>
+        <!-- Lista de consultas -->
+    </ul>
+</body>
+
+<script>
+   function historico() {
+            window.location.href = "/historico";
+        }
+</script>
+</html>

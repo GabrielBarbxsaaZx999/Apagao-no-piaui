@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body class="corpo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Inicio</title>
+</head>
+    <h1 class="titulo">
+        <img class="img1" src="https://github.com/GabrielBarbxsaaZx999/testee.github.io/blob/main/Logo.png?raw=true"
+            alt="Logo">
+    </h1>
+    <br>
+    <div class="botoes">
+        <input class="pesquisar"  placeholder=" Pesquisar...">
+        <button onclick="mudarPagina()" class="cadastro">Cadastre-se</button>
+        <button onclick="Entrar()" class="login">Entrar</button>
+    </div>
+
+    <br>
+        <button class="butao" onclick="quemsomos()">Quem somos?</button>
+        <button class="butao" onclick="redirectAgendar()">Agendar consultas</button>
+        <button class="butao" onclick="redirectAjuda()">Ajuda</button>
+    <br>
+        <hr class="linha1" size="0" width="200">
+        <hr class="linha2" size="0" width="260">
+        <hr class="linha3" size="0" width="90">
+        <br>
+        <br>
+        <div class="texto2">
+            Cuidar da <span style="color: #00A6FB;">saúde</span> e <span style="color: #00A6FB;">bem-estar</span> também
+            é se <span style="color: #00A6FB;">amar</span>
+        </div>
+        <br>
+        <br>
+        
+        <button class="buton" onclick="localiza()">Onde estamos localizados?</button>
+        <button class="buton" onclick="redirectOutros()">A maior riqueza é a saúde</button>
+        <button class="buton" onclick="redirectOutros()">Saúde traz felicidade</button>
+
+    <footer class="rodape">
+        <h3>
+            Todos os direitos reservados©
+        </h3>
+    </footer>
+
+
+    <style>
+     *{
+   margin: 0px;
+   padding: 0px;
+   font-family: Helvetica;
+   
+}
+
+body {
+    background: url('https://github.com/TheVitin/imagens-telainicio-ubuntu/blob/main/imagemfundo.png?raw=true');
+    background-size: cover;
+  
+}
+
+.titulo{
+background-color: #00A6FB;
+height: 55px;
+}
+
+.corpo{
+background-color: #eee;
+border-top: 8px solid #00A6FB;
+}
+
+.pesquisar{
+background-color: #fff;
+width: 750px;
+height: 39px;
+margin-left: 50px;
+margin-right: 100px;
+font-size: 20px;
+text-align: left;
+border-radius: 10px;
+border-color:#000000;
+}
+
+
+.cadastro {
+    background-color: #116D9C;
+    float: right;
+    margin-right: 50px; 
+    height: 39px;
+    width: 130px;
+    font-size: 15px;
+    border-color: #116D9C;
+    color: #fff;
+}
+
+.login {
+    background-color: #00A6FB;
+    float: right; 
+    margin-right: 20px; 
+    height: 39px;
+    width: 120px;
+    font-size: 15px;
+    border-color: #00A6FB;
+    color: #fff;
+}
+
+
+
+.cadastro:hover{
+transform: scale(1.1);
+transition: all 0.5s;
+background-color: #00A6FB;
+border-color: #00A6FB;
+}
+.login:hover{
+transform: scale(1.1);
+transition: all 0.5s;
+background-color: #116D9C;
+border-color: #116D9C;
+}
+.texto {
+font-size: 22px;
+}
+.texto2{
+font-size: 30px;
+margin-left: 60px;
+max-height: 100px;
+width: 400px;
+}
+.buton{
+width: 210px;
+height: 180px;
+margin-left: 60px;
+margin-right: 40px;
+border-color: #fff;
+background-color: solid #fff;
+font-size: 15px;
+border-radius: 10px;
+font-size: 25px;
+
+}
+.buton:hover{
+transform: scale(1.1);
+transition: all 0.5s;
+background-color: #00A6FB;
+border-color: #00A6FB;
+}
+.linha1{
+margin-left: 63px;
+
+
+}
+.linha2{
+margin-left: 450px;
+
+}
+.linha3{
+margin-left: 900px;
+
+}
+
+.botoes{
+   border: 10px solid transparent;
+}
+
+.img1{
+   margin-left: 15px;
+   height: 50px;
+   width: 160px;
+
+}
+
+
+.rodape{
+   text-align: left;
+   padding: 14px;
+   background-color: #00A6FB;
+   color: #fff;
+   margin-top: 100px;
+}
+
+
+.butao{
+   background-color: transparent;
+   border-color: transparent;
+   margin-right: 120px;
+   margin-left: 50px;
+   font-size: 30px;
+   padding: 10px;
+}
+    </style>
+
+    <script>
+        function mudarPagina() {
+            // Altera a localização (URL) para a nova página
+            window.location.href = "cadastro";
+        }
+
+        function Entrar() {
+            // Altera a localização (URL) para a nova página
+            window.location.href = "login2";
+        }
+
+        function quemsomos() {
+            // Altera a localização (URL) para a nova página
+            window.location.href = "quemsomos";
+        }
+
+        function localiza() {
+            window.location.href = "localizacaoCerto";
+        }
+    </script>
+</body>
+
+</html>
